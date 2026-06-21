@@ -40,7 +40,7 @@ const Hero = () => {
           {/*Left column - text content */}
           <div>
             <div>
-                <span>Tech Generalist</span>
+                <span>Tech Generalist (Sumit is currently building this website)</span>
             </div>
           </div>
           {/*Right column - profile image */}
