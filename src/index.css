@@ -21,7 +21,7 @@
 
   --color-highlight: #f5a623;
   --color-surface: #1a2329;
-} 
+}
 
 @layer base {
   html {
@@ -44,7 +44,7 @@
 }
 
 @layer components {
-   .glass {
+  .glass {
     background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);
     border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
@@ -54,5 +54,41 @@
     background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
     backdrop-filter: blur(24px);
     border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+      filter: blur(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out both;
+  }
+
+  @keyframes slow-drift {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -30px);
+    }
+    50% {
+      transform: translate(-15px, -20px);
+    }
+    75% {
+      transform: translate(30px, 10px);
+    }
   }
 }
