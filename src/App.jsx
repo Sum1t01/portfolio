@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Hero from './sections/Hero';
-import NavBar from './Layout/NavBar';
+import NavBar from './layout/NavBar';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
