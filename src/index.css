@@ -109,12 +109,25 @@
     animation-delay: 800ms;
   }
 
+   .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
   @keyframes animated-border {
     0% {
       stroke-dashoffset: 400;
     }
     100% {
       stroke-dashoffset: -550;
+    }
+  }
+
+  @keyframes marquee {
+     0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-50%);
     }
   }
 
