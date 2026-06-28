@@ -43,6 +43,7 @@ const NavBar = () => {
                             <a
                                 href={link.href}
                                 key={index}
+                                onClick={() => setMobileMenuOpen(false)}
                                 className='px-4 py-1 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface'
                             >
                                 {link.label}
@@ -54,7 +55,10 @@ const NavBar = () => {
 
                 {/* CTA Button */}
                 <div className='hidden md:block'>
-                    <Button size='sm'>Contact Me</Button>
+                    <Button 
+                    size="sm"
+                    onClick={() => setMobileMenuOpen(false)}
+                    >Contact Me</Button>
                 </div>
 
                 {/* Mobile Menu Button */}
