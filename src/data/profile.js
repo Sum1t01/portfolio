@@ -270,7 +270,7 @@ export const content = {
   downloadCvLabel: "Download CV",
   hero: {
     eyebrow: "Hi, I'm",
-    headline: "Sumit",
+    headline: "Sumit Gupta",
     tagline:
       "A Software Engineer specializing in mobile app development, with a strong research background in Machine Learning, Deep Learning, Image Processing, and Computer Vision, plus working experience with backend systems in Spring Boot.",
     scrollLabel: "Scroll",
