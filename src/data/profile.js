@@ -10,7 +10,7 @@ export const profile = {
   },
 };
 
-export const bio = `I'm a software engineer at Shipsy in Gurugram, where I build mobile
+export const bio = `I'm a software engineer - L2 at Shipsy, where I build mobile
 experiences for logistics teams — mostly Kotlin, Jetpack Compose, and Kotlin
 Multiplatform. I grew up in Kathmandu, moved to Delhi on a scholarship from
 the Indian Council for Cultural Relations to study Computer Engineering at
@@ -309,6 +309,10 @@ export const content = {
     errorMessage: "Something went wrong. Please try again, or reach out on socials below.",
   },
   footer: {
-    copyright: (year) => `© ${year} ${profile.name}.`,
+    tagline: "Building things at the intersection of mobile and machine learning.",
+    navLabel: "Navigate",
+    socialsLabel: "Elsewhere",
+    backToTop: "Back to top",
+    copyright: (year) => `© ${year} ${profile.name}. All rights reserved.`,
   },
 };
