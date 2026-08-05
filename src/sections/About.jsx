@@ -26,14 +26,16 @@ const About = () => {
         </Reveal>
 
         {/* Highlight cards */}
-        <div className='grid sm:grid-cols-3 gap-px bg-border mt-16 border border-border'>
+        <div className='grid sm:grid-cols-3 gap-6 mt-16'>
           {highlights.map((item, idx) => {
             const Icon = highlightIcons[item.key]
             return (
-              <Reveal key={item.key} delay={idx * 100} className='bg-background p-8'>
-                <Icon className='w-6 h-6 text-primary' />
-                <h3 className='mt-6 text-lg font-bold tracking-tight'>{item.title}</h3>
-                <p className='mt-2 text-sm text-muted-foreground leading-relaxed'>{item.description}</p>
+              <Reveal key={item.key} delay={idx * 100}>
+                <div className='h-full bg-card border border-border rounded-2xl p-8 shadow-lg shadow-black/20 transition-all duration-300 ease-[var(--ease-premium)] hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.5),0_0_16px_rgba(215,255,61,0.15)]'>
+                  <Icon className='w-6 h-6 text-primary' />
+                  <h3 className='mt-6 text-lg font-bold tracking-tight'>{item.title}</h3>
+                  <p className='mt-2 text-sm text-muted-foreground leading-relaxed'>{item.description}</p>
+                </div>
               </Reveal>
             )
           })}
@@ -98,7 +100,7 @@ const About = () => {
                       {group.items.map((skill, sidx) => (
                         <span
                           key={sidx}
-                          className='px-3 py-1.5 text-sm border border-border rounded-[var(--radius)] text-foreground/90'
+                          className='px-3 py-1.5 text-sm border border-border rounded-full text-foreground/90 transition-all duration-300 ease-[var(--ease-premium)] hover:border-primary hover:text-primary hover:shadow-[0_0_10px_rgba(215,255,61,0.2)]'
                         >
                           {skill}
                         </span>

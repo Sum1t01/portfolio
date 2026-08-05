@@ -90,6 +90,7 @@ export const projects = [
     name: "RealEstate",
     stack: "Jetpack Compose, Kotlin, Express, React, MongoDB",
     period: "June 2024 — Present",
+    link: "https://github.com/Sum1t01/RealEstate",
     points: [
       "A full-stack web and Android app for buying and selling real estate over a marketplace.",
       "JWT authentication, Google OAuth, and Firebase integration.",
@@ -100,6 +101,7 @@ export const projects = [
     name: "AutoSketch",
     stack: "Python, TensorFlow, Image Processing",
     period: "June 2022 — Present",
+    link: "https://github.com/Sum1t01/AutoSketch",
     points: [
       "A U-NET autoencoder that converts a photo into its sketch.",
       "Used image augmentation to expand the training set.",

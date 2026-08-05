@@ -17,29 +17,36 @@ const Projects = () => {
           </h2>
         </Reveal>
 
-        <div className='grid md:grid-cols-2 gap-px bg-border mt-16 border border-border'>
+        <div className='grid md:grid-cols-2 gap-6 mt-16'>
           {projects.map((project, idx) => (
-            <Reveal key={project.name} delay={idx * 80} className='bg-background p-8 md:p-10 group'>
-              <div className='flex items-start justify-between'>
-                <span className='text-sm text-muted-foreground'>{String(idx + 1).padStart(2, '0')}</span>
-                <ArrowUpRight className='w-5 h-5 text-muted-foreground transition-transform duration-300 ease-[var(--ease-premium)] group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-primary' />
-              </div>
-              <h3 className='mt-8 text-2xl font-bold tracking-tight'>{project.name}</h3>
-              <p className='text-sm text-muted-foreground mt-1'>{project.period}</p>
-              <ul className='mt-4 space-y-1.5'>
-                {project.points.map((point, pidx) => (
-                  <li key={pidx} className='text-muted-foreground leading-relaxed pl-4 relative before:content-["/"] before:absolute before:left-0 before:text-primary'>
-                    {point}
-                  </li>
-                ))}
-              </ul>
-              <div className='flex flex-wrap gap-2 mt-6'>
-                {project.stack.split(', ').map((tag, tidx) => (
-                  <span key={tidx} className='px-3 py-1 text-xs border border-border rounded-[var(--radius)] text-muted-foreground'>
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            <Reveal key={project.name} delay={idx * 80}>
+              <a
+                href={project.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='group block h-full bg-card border border-border rounded-2xl p-8 md:p-10 shadow-lg shadow-black/20 transition-all duration-300 ease-[var(--ease-premium)] hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.5),0_0_16px_rgba(215,255,61,0.15)]'
+              >
+                <div className='flex items-start justify-between'>
+                  <span className='text-sm text-muted-foreground'>{String(idx + 1).padStart(2, '0')}</span>
+                  <ArrowUpRight className='w-5 h-5 text-muted-foreground transition-transform duration-300 ease-[var(--ease-premium)] group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-primary' />
+                </div>
+                <h3 className='mt-8 text-2xl font-bold tracking-tight'>{project.name}</h3>
+                <p className='text-sm text-muted-foreground mt-1'>{project.period}</p>
+                <ul className='mt-4 space-y-1.5'>
+                  {project.points.map((point, pidx) => (
+                    <li key={pidx} className='text-muted-foreground leading-relaxed pl-4 relative before:content-["/"] before:absolute before:left-0 before:text-primary'>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                <div className='flex flex-wrap gap-2 mt-6'>
+                  {project.stack.split(', ').map((tag, tidx) => (
+                    <span key={tidx} className='px-3 py-1 text-xs border border-border rounded-[var(--radius)] text-muted-foreground'>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </a>
             </Reveal>
           ))}
         </div>
