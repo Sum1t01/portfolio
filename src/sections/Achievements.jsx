@@ -4,7 +4,7 @@ import { achievements, content } from '../data/profile'
 
 const Achievements = () => {
   return (
-    <section id='achievements' className='py-32 relative overflow-hidden'>
+    <section id='achievements' className='py-20 relative overflow-hidden'>
       <div className='container mx-auto px-6'>
 
         <Reveal>

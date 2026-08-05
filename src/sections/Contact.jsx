@@ -53,7 +53,7 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact' className='py-32 relative overflow-hidden'>
+    <section id='contact' className='py-20 relative overflow-hidden'>
       <div className='container mx-auto px-6'>
 
         <Reveal>

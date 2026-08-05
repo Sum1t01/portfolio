@@ -5,7 +5,7 @@ import { projects, publications, content } from '../data/profile'
 
 const Projects = () => {
   return (
-    <section id='projects' className='py-32 relative overflow-hidden'>
+    <section id='projects' className='py-20 relative overflow-hidden'>
       <div className='container mx-auto px-6'>
 
         <Reveal>

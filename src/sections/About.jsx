@@ -13,7 +13,7 @@ const highlightIcons = {
 
 const About = () => {
   return (
-    <section id='about' className='py-32 relative overflow-hidden'>
+    <section id='about' className='py-20 relative overflow-hidden'>
       <div className='container mx-auto px-6'>
 
         <Reveal>

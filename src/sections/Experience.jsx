@@ -4,7 +4,7 @@ import { experience, content } from '../data/profile'
 
 const Experience = () => {
   return (
-    <section id='experience' className='py-32 relative overflow-hidden'>
+    <section id='experience' className='py-20 relative overflow-hidden'>
       <div className='container mx-auto px-6'>
 
         <Reveal>
