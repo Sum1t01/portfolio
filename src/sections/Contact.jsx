@@ -130,7 +130,7 @@ const Contact = () => {
           )}
         </Reveal>
 
-        <Reveal delay={220} className='mt-20 pt-10 border-t border-border flex flex-wrap items-center justify-between gap-8'>
+        <Reveal delay={220} className='mt-10 pt-6 border-t border-border flex flex-wrap items-center justify-between gap-8'>
           <div className='flex items-center gap-6'>
             {socials.map((social) => {
               const Icon = socialIcons[social.key]
@@ -152,7 +152,7 @@ const Contact = () => {
           <p className='text-sm text-muted-foreground'>{profile.location}</p>
         </Reveal>
 
-        <p className='mt-20 text-xs text-muted-foreground'>{content.footer.copyright(new Date().getFullYear())}</p>
+        <p className='mt-6 text-xs text-muted-foreground'>{content.footer.copyright(new Date().getFullYear())}</p>
 
       </div>
     </section>
