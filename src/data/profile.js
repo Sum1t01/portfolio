@@ -10,7 +10,7 @@ export const profile = {
   },
 };
 
-export const bio = `I'm a software engineer - L2 at Shipsy, where I build mobile
+export const bio = `I'm a software engineer - II at Shipsy, where I build mobile
 experiences for logistics teams — mostly Kotlin, Jetpack Compose, and Kotlin
 Multiplatform. I grew up in Kathmandu, moved to Delhi on a scholarship from
 the Indian Council for Cultural Relations to study Computer Engineering at
@@ -19,7 +19,7 @@ for the people using it. That's still mostly what I care about at work.`;
 
 export const experience = [
   {
-    role: "Software Engineer L2",
+    role: "Software Engineer II",
     org: "Shipsy",
     location: "Gurugram, India",
     period: "May 2026 — Present",
