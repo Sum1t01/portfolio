@@ -115,4 +115,13 @@
   .animate-scroll-cue {
     animation: scroll-cue 1.8s var(--ease-premium) infinite;
   }
+
+  @keyframes nav-icon-cycle {
+    from { opacity: 0; transform: translateY(4px) scale(0.85); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  .animate-nav-icon-cycle {
+    animation: nav-icon-cycle 0.5s var(--ease-premium) both;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Button } from '../components/Button'
 import { Menu, X } from 'lucide-react'
+import NavLogoCycle from '../components/NavLogoCycle'
 import { nav, content } from '../data/profile'
 
 const NavBar = () => {
@@ -76,8 +77,9 @@ const NavBar = () => {
             }`}
         >
             <nav className='container mx-auto px-6 py-5 flex items-center justify-between'>
-                <a href='#' className='text-xl font-bold tracking-tight'>
-                    {content.brandInitials}<span className='text-primary'>.</span>
+                <a href='#' className='flex items-center gap-2 text-xl font-bold tracking-tight'>
+                    {content.brandInitials}
+                    <NavLogoCycle />
                 </a>
 
                 {/* Desktop's navigation */}
