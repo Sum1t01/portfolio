@@ -270,6 +270,7 @@ export const content = {
   brandInitials: "SG",
   ctaLabel: "Contact Me",
   downloadCvLabel: "Download CV",
+  resumeFile: "/Sumit-Gupta-Resume.pdf",
   hero: {
     eyebrow: "Hi, I'm",
     headline: "Sumit Gupta",

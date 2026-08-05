@@ -1,8 +1,14 @@
 import React from 'react'
 
-const AnimatedBorderButton = ({ children, className = "" }) => {
+const AnimatedBorderButton = ({ children, className = "", href, download, target, rel }) => {
+  const Tag = href ? 'a' : 'button'
+
   return (
-    <button
+    <Tag
+      href={href}
+      download={download}
+      target={target}
+      rel={rel}
       className={`group relative inline-flex items-center justify-center gap-2
         px-7 py-3.5 text-base font-medium tracking-tight
         border border-border rounded-[var(--radius)] overflow-hidden
@@ -22,7 +28,7 @@ const AnimatedBorderButton = ({ children, className = "" }) => {
       >
         {children}
       </span>
-    </button>
+    </Tag>
   )
 }
 

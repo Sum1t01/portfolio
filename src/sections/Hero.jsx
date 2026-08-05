@@ -40,7 +40,7 @@ const Hero = () => {
               </Button>
             </Magnetic>
             <Magnetic>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton href={content.resumeFile} target="_blank" rel="noopener noreferrer">
                 <Download className='w-5 h-5' />
                 {content.downloadCvLabel}
               </AnimatedBorderButton>
