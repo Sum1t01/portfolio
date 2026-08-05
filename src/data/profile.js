@@ -66,6 +66,24 @@ export const experience = [
   },
 ];
 
+export const apps = [
+  {
+    name: "Shipsy Field Ops",
+    description: "Field workforce app for logistics teams — task assignment, tracking, and on-ground operations.",
+    link: "https://play.google.com/store/apps/details?id=io.shipsy.fieldops&hl=en_IN",
+  },
+  {
+    name: "Shipsy Hub Ops",
+    description: "Hub and warehouse operations app for managing inbound and outbound shipment flow.",
+    link: "https://play.google.com/store/apps/details?id=in.shipsy.riderapp.hubOps&hl=en_IN",
+  },
+  {
+    name: "Shipsy OnDemand",
+    description: "Rider app for on-demand delivery and pickup operations.",
+    link: "https://play.google.com/store/apps/details?id=in.shipsy.riderapp.ondemand.generic",
+  },
+];
+
 export const education = [
   {
     school: "Delhi Technological University",
@@ -288,6 +306,7 @@ export const content = {
   experience: {
     eyebrow: "Experience",
     heading: "Where I've worked",
+    appsLabel: "Apps I've worked on",
   },
   achievements: {
     eyebrow: "Achievements",
