@@ -15,7 +15,7 @@ const socialIcons = {
 
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
 
-const inputClasses = "w-full bg-transparent border border-border rounded-[var(--radius)] px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
+const inputClasses = "w-full bg-transparent border border-border rounded-2xl px-5 py-3 text-foreground placeholder:text-muted-foreground transition-all duration-300 ease-[var(--ease-premium)] hover:border-primary/50 focus:outline-none focus:border-primary focus:shadow-[0_0_12px_rgba(215,255,61,0.25)]"
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
