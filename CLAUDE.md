@@ -76,7 +76,10 @@ When adding new sections or components, stay inside this system rather than reac
 - Wrap section entrances in `<Reveal>` instead of static `animation-delay` classes where practical.
 - Wrap interactive buttons/links in `<Magnetic>` where it fits (primary CTAs, social icons) — not
   every element, that dilutes the effect.
-- Reuse `.eyebrow` / `.underline-link` utility classes from `index.css` for section labels and nav-style links.
+- Reuse the `.eyebrow` utility class from `index.css` for section labels.
+- The NavBar's active-section indicator is a single sliding `<span>` (position/width driven by refs +
+  `IntersectionObserver`, not per-link underlines) — keep that pattern if extending nav behavior, don't
+  reintroduce independent per-link hover underlines for the primary nav.
 
 ## Structure
 
