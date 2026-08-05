@@ -3,7 +3,7 @@ import { HiOutlineDeviceMobile } from 'react-icons/hi'
 import { PiBrainDuotone } from 'react-icons/pi'
 import { SiSpringboot } from 'react-icons/si'
 import Reveal from '../components/Reveal'
-import { bio, education, skills, extracurricular, highlights, content } from '../data/profile'
+import { bio, education, skills, highlights, content } from '../data/profile'
 
 const highlightIcons = {
   mobile: HiOutlineDeviceMobile,
@@ -70,18 +70,6 @@ const About = () => {
                         {item.coursework}
                       </p>
                     )}
-                  </div>
-                ))}
-              </div>
-            </Reveal>
-
-            <Reveal delay={150} className='mt-14'>
-              <p className='eyebrow'>{content.about.extracurricularLabel}</p>
-              <div className='mt-6 space-y-4'>
-                {extracurricular.map((item, idx) => (
-                  <div key={idx}>
-                    <p className='font-medium'>{item.title}</p>
-                    <p className='text-sm text-muted-foreground mt-1'>{item.detail}</p>
                   </div>
                 ))}
               </div>
