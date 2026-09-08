@@ -55,12 +55,12 @@ const About = () => {
               <div className='mt-6 divide-y divide-border border-t border-border'>
                 {education.map((item, idx) => (
                   <div key={idx} className='py-5'>
-                    <div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-                      <div>
+                    <div className='flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-x-6'>
+                      <div className='sm:min-w-0'>
                         <p className='font-medium'>{item.school}</p>
                         <p className='text-sm text-muted-foreground mt-1'>{item.degree}</p>
                       </div>
-                      <div className='text-right shrink-0'>
+                      <div className='shrink-0 sm:text-right'>
                         <p className='text-sm text-muted-foreground'>{item.period}</p>
                         <p className='text-sm text-primary mt-1'>{item.detail}</p>
                       </div>
